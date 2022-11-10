@@ -17,4 +17,9 @@ where data1 is null
 answer=139
 
 #Question3
+select sum(data2.qty) from data2
+left join data1
+on data1.order_id = data2.order_id
+where data1 is null
+answer=497
 
