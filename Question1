@@ -1,0 +1,4 @@
+select data1.order_id,data1.product_id from data1
+left join data2
+on data1.order_id = data2.order_id
+where data2 is null
