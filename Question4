@@ -1,0 +1,5 @@
+select count(*) from data1
+full outer join data2
+on data1.order_id = data2.order_id
+where data1.order_id is null or data2.order_id is null or data1.product_id is null or data2.product_id is null
+#answer=268
